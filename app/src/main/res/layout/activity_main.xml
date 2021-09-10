@@ -22,6 +22,20 @@
         android:text="Room"
         android:id="@+id/tvRoom"
         android:textSize="30sp"/>
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paging"
+        android:id="@+id/tvPaging"
+        android:textSize="30sp"/>
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Navigation"
+        android:id="@+id/tvNavigation"
+        android:textSize="30sp"/>
 </LinearLayout>
 
 
