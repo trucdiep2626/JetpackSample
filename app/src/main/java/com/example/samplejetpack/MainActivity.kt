@@ -6,7 +6,7 @@ import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.example.samplejetpack.databinding.ActivityMainBinding
 import com.example.samplejetpack.navigation.NavigationMainActivity
-import com.example.samplejetpack.paging.view.CountryActivity
+import com.example.samplejetpack.paging.view.TodoActivity
 import com.example.samplejetpack.room.view.NoteActivity
 import com.example.samplejetpack.workManager.WorkManagerActivity
 
@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.tvPaging.setOnClickListener{
-            val intent = Intent(this@MainActivity, CountryActivity::class.java)
+            val intent = Intent(this@MainActivity, TodoActivity::class.java)
             startActivity(intent)
         }
 
@@ -37,5 +37,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, NavigationMainActivity::class.java)
             startActivity(intent)
         }
+
     }
 }

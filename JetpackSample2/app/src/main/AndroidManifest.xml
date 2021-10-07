@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jetpacksample2">
+
+    <meta-data
+        android:name="fontProviderRequests"
+        android:value="Noto Color Emoji Compat" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera"/>
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JetpackSample2">
+        <activity android:name=".sharing.SharingActivity"></activity>
+        <provider
+            android:authorities="com.example.jetpacksample2.sharing"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path"
+                />
+        </provider>
+        <provider
+            android:name=".slice.MySliceProvider"
+            android:authorities="com.example.jetpacksample2.slice"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.app.slice.category.SLICE" />
+
+                <data
+                    android:host="slice.jetpacksample2.example.com"
+                    android:pathPrefix="/"
+                    android:scheme="http" />
+            </intent-filter>
+        </provider>
+
+        <activity android:name=".slice.SliceActivity" />
+        <activity android:name=".mediaPlayer.MediaPlayerActivity" />
+        <activity android:name=".downloadManager.DownloadManagerActivity" />
+        <activity
+            android:name=".notification.DetailActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="" /> <!-- android:parentActivityName=".palette.PaletteActivity" -->
+        <activity android:name=".notification.NotificaionActivity" />
+        <activity android:name=".emoji.EmojiActivity" />
+        <activity android:name=".palette.PaletteActivity" />
+        <activity android:name=".animation.AnimationActivity" />
+        <activity android:name=".fragment.ExampleFragmentActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

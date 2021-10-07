@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+ >
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+<!--        <androidx.emoji.widget.EmojiTextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+<!--        <androidx.emoji.widget.EmojiEditText-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+<!--        <androidx.emoji.widget.EmojiButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+<!--    </LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <androidx.emoji.widget.EmojiAppCompatTextView
+            android:id="@+id/emoji_text_view"
+            android:textSize="20sp"
+            android:text="xxxx"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <androidx.emoji.widget.EmojiAppCompatEditText
+            android:id="@+id/emoji_edit_text"
+            android:layout_width="match_parent"
+
+            android:textSize="20sp"
+            android:layout_height="50dp" />
+
+        <androidx.emoji.widget.EmojiAppCompatButton
+            android:id="@+id/emoji_button"
+
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/regular_text_view"
+            android:layout_width="match_parent"
+
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+
+        <com.example.jetpacksample2.emoji.CustomTextView
+            android:id="@+id/emoji_custom_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</layout>

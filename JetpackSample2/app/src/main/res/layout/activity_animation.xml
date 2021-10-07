@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="horizontal"
+        android:gravity="center">
+
+<!--        <ImageView-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:id="@+id/ivHeart"-->
+<!--            android:src="@drawable/ic_heart"/>-->
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:lottie_rawRes="@raw/jump_through_4_hoops"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"/>
+
+
+    </LinearLayout>
+ </layout>
+
+
+
+
+
+
+
+
+
+<!--animation with motionlayout-->
+<!--<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    app:layoutDescription="@xml/scene"-->
+<!--    app:showPaths = "true"-->
+<!--    android:id="@+id/motionContainer"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".animation.AnimationActivity">-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:src="@color/purple_500"-->
+<!--        android:id="@+id/imgView"-->
+<!--        />-->
+
+<!--</androidx.constraintlayout.motion.widget.MotionLayout>-->

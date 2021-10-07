@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </SeekBar>
+    <LinearLayout
+        android:gravity="center"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:layout_weight="1"
+            android:id="@+id/tvCurrentPosition"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMaxTime"
+            android:text="00:00"
+            android:gravity="end"
+            android:layout_weight="1"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rewind"
+                android:id="@+id/btnRewind"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:layout_weight="1"
+                android:id="@+id/btnStart"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Pause"
+                android:id="@+id/btnPause"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="FastForward"
+                android:layout_weight="1"
+                android:id="@+id/btnFastForward"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a song"
+            android:id="@+id/btnSelectASong"/>
+    </LinearLayout>
+
+</layout>

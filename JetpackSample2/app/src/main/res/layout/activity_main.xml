@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fragment"
+                android:id="@+id/tvFragment"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Animation"
+                android:id="@+id/tvAnimation"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Palette"
+                android:id="@+id/tvPalette"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Emoji"
+                android:id="@+id/tvEmoji"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notification"
+                android:id="@+id/tvNotification"
+                android:textSize="30sp"/>
+
+
+            <TextView
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DownloadManager"
+                android:id="@+id/tvDownloadManager"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MediaPlayer"
+                android:id="@+id/tvMediaPlayer"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Slice"
+                android:id="@+id/tvSlice"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sharing"
+                android:id="@+id/tvSharing"
+                android:textSize="30sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</layout>

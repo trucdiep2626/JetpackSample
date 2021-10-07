@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">JetpackSample2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="channel_name">JetpackSample2</string>
+    <string name="channel_description">Hello</string>
+    <string name="emoji_text_view">Emoji TextView %s</string>
+    <string name="emoji_edit_text">Emoji EditText %s</string>
+    <string name="emoji_button">Emoji Button %s</string>
+    <string name="regular_text_view">Regular TextView %s</string>
+    <string name="custom_text_view">Custom TextView %s</string>
+    <string name="uri_specific_for_slice_viewer_application" translatable="false">slice-content://com.example.jetpacksample2.slice/hello</string>
+
+    <string name="slice_viewer_application_package_name">com.example.android.sliceviewer</string>
+
+    <string name="slice_viewer_application_not_enabled">Slice Viewer Application is not enabled.\nPlease enable in settings.</string>
+    <string name="slice_viewer_application_not_installed">Slice Viewer Application is not installed.\nCheck Logcat for details.</string>
+
+    <string name="error_message_slice_viewer_APK_missing">The Slice Viewer APK is missing on your device or emulator.\nThe Slice Viewer APK is included in the codelab.\nNavigate to the root of the codelab and run the following command after your phone or emulator is connected:\nadb install -r -t slice-viewer.apk</string>
+    <string name="error_message_slice_viewer_APK_disabled">The Slice Viewer APK is not enabled. Please enable in settings.</string>
+</resources>

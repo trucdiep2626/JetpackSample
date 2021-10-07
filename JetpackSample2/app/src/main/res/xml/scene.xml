@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition app:constraintSetStart="@+id/start"
+        app:autoTransition="animateToEnd"
+        app:constraintSetEnd="@+id/end"
+        app:duration="2000">
+        <OnClick app:clickAction="toggle"
+            app:targetId="@+id/imgView"/>
+        <KeyFrameSet>
+<!--            thay đổi vị trí-->
+            <KeyPosition app:keyPositionType="parentRelative"
+                app:motionTarget="@+id/imgView"
+                app:framePosition="25"
+                app:percentY="0.2"
+                app:percentX="0.2"/>
+            <KeyPosition app:keyPositionType="parentRelative"
+                app:framePosition="50"
+                app:motionTarget="@+id/imgView"
+                app:percentY="0.5"
+                app:percentX="0.8"/>
+            <KeyPosition app:keyPositionType="parentRelative"
+                app:framePosition="75"
+                app:motionTarget="@+id/imgView"
+                app:percentY="0.8"
+                app:percentX="0.2"/>
+
+<!--            thay đổi kích thước-->
+            <KeyAttribute app:framePosition="25"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                app:motionTarget="@+id/imgView">
+           <CustomAttribute app:attributeName="colorFilter"
+               app:customColorValue="@color/purple_500"/>
+            </KeyAttribute>
+            <KeyAttribute app:framePosition="50"
+                android:scaleX="0.25"
+                android:scaleY="0.25"
+                app:motionTarget="@+id/imgView">
+                <CustomAttribute app:attributeName="colorFilter"
+                    app:customColorValue="@color/teal_700"/>
+            </KeyAttribute>
+            <KeyAttribute app:framePosition="75"
+                android:scaleX="1"
+                android:scaleY="1"
+                app:motionTarget="@+id/imgView">
+                <CustomAttribute app:attributeName="colorFilter"
+                    app:customColorValue="@color/white"/>
+            </KeyAttribute>
+
+        </KeyFrameSet>
+    </Transition>
+
+<ConstraintSet android:id="@+id/start">
+    <Constraint android:id="@+id/imgView">
+        <Layout android:layout_height="64dp"
+            android:layout_width="64dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+    </Constraint>
+</ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint android:id="@+id/imgView">
+            <Layout android:layout_height="64dp"
+                android:layout_width="64dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+        </Constraint>
+    </ConstraintSet>
+</MotionScene>
